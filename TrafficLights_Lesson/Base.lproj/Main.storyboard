@@ -17,30 +17,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eFL-nn-A1H" userLabel="Red View">
-                                <rect key="frame" x="137.5" y="75" width="100" height="100"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="j4I-fK-2KK">
+                                <rect key="frame" x="137.5" y="75" width="100" height="360"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eFL-nn-A1H" userLabel="Red View">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hq1-9K-bOU" userLabel="Yellow View">
+                                        <rect key="frame" x="0.0" y="130" width="100" height="100"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GeN-f6-6bf" userLabel="Green View">
+                                        <rect key="frame" x="0.0" y="260" width="100" height="100"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                    </view>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="UuR-it-F5Q"/>
-                                    <constraint firstAttribute="width" constant="100" id="gaf-ld-GfD"/>
+                                    <constraint firstAttribute="height" constant="360" id="DdR-Uv-hdA"/>
+                                    <constraint firstAttribute="width" constant="100" id="S6I-v6-ChW"/>
                                 </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hq1-9K-bOU" userLabel="Yellow View">
-                                <rect key="frame" x="137.5" y="205" width="100" height="100"/>
-                                <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="HYZ-Lf-cef"/>
-                                    <constraint firstAttribute="width" constant="100" id="fB5-uJ-eGD"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GeN-f6-6bf" userLabel="Green View">
-                                <rect key="frame" x="137.5" y="335" width="100" height="100"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="oH4-Yg-0hu"/>
-                                    <constraint firstAttribute="height" constant="100" id="rcj-tZ-M85"/>
-                                </constraints>
-                            </view>
+                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BF4-RL-vdJ">
                                 <rect key="frame" x="121.5" y="514" width="132" height="53"/>
                                 <color key="backgroundColor" name="AccentColor"/>
@@ -60,14 +57,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="labelColor"/>
                         <constraints>
-                            <constraint firstItem="GeN-f6-6bf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="01l-07-2dl"/>
-                            <constraint firstItem="eFL-nn-A1H" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0Qp-1h-rYX"/>
-                            <constraint firstItem="Hq1-9K-bOU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6k9-zT-RPP"/>
+                            <constraint firstItem="j4I-fK-2KK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4Wo-nl-3Ua"/>
                             <constraint firstItem="BF4-RL-vdJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AiO-Fw-rBX"/>
-                            <constraint firstItem="GeN-f6-6bf" firstAttribute="top" secondItem="Hq1-9K-bOU" secondAttribute="bottom" constant="30" id="IW7-t0-dbe"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BF4-RL-vdJ" secondAttribute="bottom" constant="100" id="WZg-gT-Nwk"/>
-                            <constraint firstItem="eFL-nn-A1H" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="75" id="auG-Xk-Ef2"/>
-                            <constraint firstItem="Hq1-9K-bOU" firstAttribute="top" secondItem="eFL-nn-A1H" secondAttribute="bottom" constant="30" id="sEo-xo-Gdg"/>
+                            <constraint firstItem="j4I-fK-2KK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="75" id="aLt-wE-jaV"/>
                         </constraints>
                     </view>
                     <connections>
