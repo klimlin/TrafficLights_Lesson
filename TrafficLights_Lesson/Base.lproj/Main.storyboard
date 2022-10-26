@@ -17,32 +17,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="j4I-fK-2KK">
-                                <rect key="frame" x="137.5" y="75" width="100" height="360"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eFL-nn-A1H" userLabel="Red View">
-                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
-                                        <color key="backgroundColor" systemColor="systemRedColor"/>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hq1-9K-bOU" userLabel="Yellow View">
-                                        <rect key="frame" x="0.0" y="130" width="100" height="100"/>
-                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GeN-f6-6bf" userLabel="Green View">
-                                        <rect key="frame" x="0.0" y="260" width="100" height="100"/>
-                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                    </view>
-                                </subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eFL-nn-A1H" userLabel="Red View">
+                                <rect key="frame" x="137.5" y="75" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="360" id="DdR-Uv-hdA"/>
-                                    <constraint firstAttribute="width" constant="100" id="S6I-v6-ChW"/>
+                                    <constraint firstAttribute="width" secondItem="eFL-nn-A1H" secondAttribute="height" multiplier="1:1" id="dXv-4X-Ujz"/>
                                 </constraints>
-                            </stackView>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hq1-9K-bOU" userLabel="Yellow View">
+                                <rect key="frame" x="137.5" y="205" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Hq1-9K-bOU" secondAttribute="height" multiplier="1:1" id="FYG-kq-FTF"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GeN-f6-6bf" userLabel="Green View">
+                                <rect key="frame" x="137.5" y="335" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="GeN-f6-6bf" secondAttribute="height" multiplier="1:1" id="lb8-cP-vkB"/>
+                                </constraints>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BF4-RL-vdJ">
-                                <rect key="frame" x="121.5" y="514" width="132" height="53"/>
+                                <rect key="frame" x="123" y="514" width="129" height="53"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="132" id="fhR-SR-xpQ"/>
+                                    <constraint firstAttribute="width" secondItem="BF4-RL-vdJ" secondAttribute="height" multiplier="129:53" id="xF4-98-9Ea"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="129" id="yc5-Ws-9Q5"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -57,10 +58,18 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="labelColor"/>
                         <constraints>
-                            <constraint firstItem="j4I-fK-2KK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4Wo-nl-3Ua"/>
-                            <constraint firstItem="BF4-RL-vdJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AiO-Fw-rBX"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BF4-RL-vdJ" secondAttribute="bottom" constant="100" id="WZg-gT-Nwk"/>
-                            <constraint firstItem="j4I-fK-2KK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="75" id="aLt-wE-jaV"/>
+                            <constraint firstItem="eFL-nn-A1H" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="75" id="0ot-Vw-4co"/>
+                            <constraint firstItem="BF4-RL-vdJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3yv-ik-bDG"/>
+                            <constraint firstItem="GeN-f6-6bf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="66H-Tl-zTu"/>
+                            <constraint firstItem="GeN-f6-6bf" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.149925" id="As0-dZ-guh"/>
+                            <constraint firstItem="Hq1-9K-bOU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FOc-os-4cg"/>
+                            <constraint firstItem="BF4-RL-vdJ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.344" id="HSc-Ne-PUj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BF4-RL-vdJ" secondAttribute="bottom" constant="100" id="LPt-bq-IqU"/>
+                            <constraint firstItem="GeN-f6-6bf" firstAttribute="top" secondItem="Hq1-9K-bOU" secondAttribute="bottom" constant="30" id="Q0e-xu-3cg"/>
+                            <constraint firstItem="eFL-nn-A1H" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.149925" id="SGS-0U-dyo"/>
+                            <constraint firstItem="Hq1-9K-bOU" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.149925" id="XO4-3s-XJK"/>
+                            <constraint firstItem="Hq1-9K-bOU" firstAttribute="top" secondItem="eFL-nn-A1H" secondAttribute="bottom" constant="30" id="lF0-cl-BhT"/>
+                            <constraint firstItem="eFL-nn-A1H" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vL0-TK-epC"/>
                         </constraints>
                     </view>
                     <connections>

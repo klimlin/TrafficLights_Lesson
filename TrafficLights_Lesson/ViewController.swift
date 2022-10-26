@@ -31,15 +31,17 @@ class ViewController: UIViewController {
         yellowLight.alpha = lightIsOff
         greenLight.alpha = lightIsOff
         
-        redLight.layer.cornerRadius = redLight.frame.width / 2
-        yellowLight.layer.cornerRadius = yellowLight.frame.width / 2
-        greenLight.layer.cornerRadius = greenLight.frame.width / 2
+//        redLight.layer.cornerRadius = redLight.frame.width / 2
+//        yellowLight.layer.cornerRadius = yellowLight.frame.width / 2
+//        greenLight.layer.cornerRadius = greenLight.frame.width / 2
         
     }
     
-//    override func viewWillLayoutSubviews() {
-//        <#code#>
-//    }
+    override func viewWillLayoutSubviews() {
+            redLight.layer.cornerRadius = redLight.frame.width / 2
+            yellowLight.layer.cornerRadius = yellowLight.frame.width / 2
+            greenLight.layer.cornerRadius = greenLight.frame.width / 2
+    }
 
 
     @IBAction func startButtonPressed() {
